@@ -1,0 +1,7 @@
+0,Titanic,11,1997,210,resources/titanic.jpg
+2,Batman,1,2010,105,resources/file_1618173552.jpg
+3,Avengers,1,2012,143,resources/file_1618176802.jpg
+4,The Notebook,11,2004,124,resources/file_1618176909.jpg
+5,Moneyball,12,2011,133,resources/file_1618177057.jpg
+6,Goodfellas,1,1990,146,resources/file_1618177126.jpg
+7,Godfather,13,1972,178,resources/file_1618177224.jpg
