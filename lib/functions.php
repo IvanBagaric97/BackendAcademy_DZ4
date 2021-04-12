@@ -63,9 +63,9 @@ function paramExists($param): bool{
  * Usmjeravanje na URL .
  * @param $url
  */
-#[NoReturn] function redirect ($url) : void {
-    header (" Location : " . $url );
-    die (); // prekida izvodenje skripte pozivateljice
+#[NoReturn] function redirect($url) : void {
+    header("Location:" . $url);
+    die(); // prekida izvodenje skripte pozivateljice
 }
 
 /**

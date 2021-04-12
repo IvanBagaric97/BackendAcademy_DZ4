@@ -2,6 +2,7 @@
 
 namespace controller;
 use db;
+use JetBrains\PhpStorm\NoReturn;
 
 class DeleteController extends AbstractController
 {
@@ -15,10 +16,10 @@ class DeleteController extends AbstractController
         $this->doJob();
     }
 
-    protected function doJob()
+    #[NoReturn] protected function doJob()
     {
         $a = new db\DBDriver();
         $a -> delete("images/film.txt", $this->id);
-        header("Location: index.php?action=add");
+        header("Location:" . "index.php?action=add");
     }
 }

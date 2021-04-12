@@ -18,7 +18,7 @@ class FilmTitleView extends AbstractView
         $table = new lib\HTMLTableElement();
 
         foreach($this->collection as $row) {
-            $img = new lib\HTMLImageElement($row[5]);
+            $img = new lib\HTMLImageElement("index.php?action=get&id=" . $row[0]);
             $img->add_attribute(new lib\HTMLAttribute("style", "width:120px"));
 
             $t1 = new lib\HTMLCellElement();

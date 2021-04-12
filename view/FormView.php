@@ -1,7 +1,7 @@
 <?php
 
 namespace view;
-use db\DBDriver;
+
 use lib, db;
 
 class FormView extends AbstractView
@@ -18,7 +18,7 @@ class FormView extends AbstractView
         $form = new lib\HTMLFormElement();
         $form->add_attribute(new lib\HTMLAttribute("action", "index.php?action=add"));
         $form->add_attribute(new lib\HTMLAttribute("method", "post"));
-        $form->add_attribute(new lib\HTMLAttribute("enctype", "multipart/form-data"));  ##check
+        $form->add_attribute(new lib\HTMLAttribute("enctype", "multipart/form-data"));
 
         $title = new lib\HTMLInputElement();
         $title->add_attribute(new lib\HTMLAttribute("type", "text"));

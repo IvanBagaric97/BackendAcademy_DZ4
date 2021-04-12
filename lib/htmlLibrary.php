@@ -613,7 +613,7 @@ class HTMLPElement extends HTMLElement{
 
 class HTMLTitleElement extends HTMLElement{
 
-    #[Pure] public function __construct($title){
+    public function __construct($title){
         parent :: __construct("title", true);
         self::add_child(new HTMLTextNode($title));
     }
@@ -622,7 +622,7 @@ class HTMLTitleElement extends HTMLElement{
 
 class HTMLMetaElement extends HTMLElement{
 
-    #[Pure] public function __construct($charset){
+    public function __construct($charset){
         parent :: __construct("meta", false);
         self::add_attribute(new HTMLAttribute("charset", $charset));
     }
@@ -631,7 +631,7 @@ class HTMLMetaElement extends HTMLElement{
 
 class HTMLAElement extends HTMLElement{
 
-    #[Pure] public function __construct($link , $text){
+    public function __construct($link , $text){
         parent :: __construct("a", true);
         array_push($this -> attributes, new HTMLAttribute("href", $link));
         self::add_child(new HTMLTextNode($text));
@@ -649,7 +649,7 @@ class HTMLLabelElement extends HTMLElement{
 
 class HTMLImageElement extends HTMLElement{
 
-    #[Pure] public function __construct(string $link){
+    public function __construct(string $link){
         parent :: __construct("img", false);
         self::add_attribute(new HTMLAttribute("src", $link));
     }

@@ -130,4 +130,16 @@ class DBDriver
         }
         return $ret;
     }
+
+    function getImage(string $id) : ?string {
+        $file = file_get_contents("images/film.txt");
+        $lines = explode("\n", trim($file));
+        foreach($lines as $line){
+            $split = explode(",", $line);
+            if($split[0] === $id){
+                return $split[5];
+            }
+        }
+        return null;
+    }
 }
