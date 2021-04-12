@@ -10,7 +10,6 @@ class IndexController extends AbstractController
 
     public function __construct(private ?string $letter)
     {
-        $this -> $letter = $letter;
     }
 
     public function doAction(bool $isBack = False) : void
